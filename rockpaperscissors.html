@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pedra, Papel ou Tesoura</title>
+
+        
 </head>
 <body>
-    <script src="app.js">
-        
-    </script>
+    <header class="header">
+        <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+    <main class="main">
+        <div id="roundResults" class="roundScores"> First to 5 points wins!</div>
+        <div id="runningScore" class="roundScores"></div>
+
+        <div id="results" class="results"></div>
+
+
+
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+                <div class="sign" data-selection="rock">✊</div>
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+                <div class="sign" data-selection="paper">✋</div>
+            </button>
+            <button class="btn btn-square" id="scissorsBtn">
+                <div class="sign" data-selection="scissors">✌</div>
+            </button>
+        </div>
+    </main>
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>
